@@ -1,0 +1,23 @@
+{
+  "name": "trabalho",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "lab": "^13.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marmitt/Trabalho-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marmitt/Trabalho-/issues"
+  },
+  "homepage": "https://github.com/Marmitt/Trabalho-#readme",
+  "description": ""
+}
