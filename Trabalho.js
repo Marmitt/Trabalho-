@@ -1,8 +1,8 @@
-function CalculaTotalItem(2,4){
-
-const produtos = (opcoes = {4}) => {
+function CalculaTotalItem(produtos = [], opcoes = {}){
+let r = { resultado: [] };
+const produtos = (opcoes = {}) => {
   produtos = [];
-  opcoes;
+  quantidade;
 {[
   {id: 1, nome: 'Banana', valorUnitario: 2},
   {id: 2, nome: 'Maça', valorUnitario: 4.5}
