@@ -7,7 +7,11 @@ const { CalculaTotalItem } = require('../CalculaTotalItem');
 
   lab.experiment('Quanto custa 5 maçãs', () => {
   lab.test('Devera custar 22.5', (done) => {
-  expect(CalculaTotalItem(5)).to.equal({resultado: [22.5]});
+  const produtos = ['Maçã', 'Banana', 'Pera', 'Morango'];
+  const retorno = { resultado:[
+    {Produto: 'Maçã', unidade: 4}
+  };
+  expect(CalculaTotalItem(produtos,{Maçã})).to.equal({resultado: [22.5]});
   done();
   });
 });
