@@ -6,9 +6,9 @@ const calculaTotalItem = function(codigo, quantidade) {
    {id: 4, nome: 'Morango', valorUnitario: 1},
   ];
 
+  const p = produtos.find(codigo, quantidade)
 
-
-  return {produto:'', valor: ''};
+  return {produto:p.nome, valor:p.valor};
 
 }
 module.exports = { calculaTotalItem };
