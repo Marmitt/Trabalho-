@@ -6,7 +6,9 @@ const calculaTotalItem = function(codigo, quantidade) {
    {id: 4, nome: 'Morango', valorUnitario: 1},
   ];
 
-  return {produto:'Maça', valor: 15 };
+
+
+  return {produto:'', valor: ''};
 
 }
 module.exports = { calculaTotalItem };
