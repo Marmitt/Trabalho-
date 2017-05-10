@@ -3,7 +3,7 @@ const lab = exports.lab = Lab.script();
 
 const { expect } = require('code');
 
-const { calculaTotalItem } = require('../calculaTotalItem');
+const { calculaTotalItem } = require('../app/calculaTotalItem');
 
 lab.experiment('Soma de 3 maçãs', () => {
   lab.test('O valor será R$15', (done) => {
@@ -19,7 +19,7 @@ lab.experiment('Soma de 5 Bananas', () => {
 });
 lab.experiment('Soma de 5 Bananas com desconto', () => {
   lab.test('O valor será R$4', (done) => {
-  expect(calculaTotalItem(1,5,4)).to.equal({produto:'Banana', valor: 4 });
+  expect(calculaTotalItem(1,5,4)).to.equal({produto:'Banana', valor: 6 });
   done();
   });
 });

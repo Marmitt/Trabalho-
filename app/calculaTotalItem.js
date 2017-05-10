@@ -1,4 +1,4 @@
-const calculaTotalItem = function(codigo, quantidade, desconto) {
+const calculaTotalItem = function(codigo, quantidade, desconto = 0) {
   const produtos = [
    {id: 1, nome: 'Banana', valorUnitario: 2},
    {id: 2, nome: 'Maça', valorUnitario: 5},
@@ -13,7 +13,7 @@ var produtoEncontrado;
     }
   }
 
-  return {produto: produtoEncontrado.nome, valor: produtoEncontrado.valorUnitario * quantidade, desconto:produtoEncontrado.valorUnitario * quantidade - desconto };
+  return {produto: produtoEncontrado.nome, valor: produtoEncontrado.valorUnitario * quantidade - desconto };
 
 }
 module.exports = { calculaTotalItem };
