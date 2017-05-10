@@ -12,8 +12,11 @@ var produtoEncontrado;
       var produtoEncontrado= produtos[i];
     }
   }
-
-  return {produto: produtoEncontrado.nome, valor: produtoEncontrado.valorUnitario * quantidade - desconto };
-
+if (desconto > (produtoEncontrado.valorUnitario * quantidade)){
+  alert ("O desconto é maior que o valor");
 }
+else {
+  return {produto: produtoEncontrado.nome, valor: produtoEncontrado.valorUnitario * quantidade - desconto };
+}
+  }
 module.exports = { calculaTotalItem };

@@ -23,3 +23,9 @@ lab.experiment('Soma de 5 Bananas com desconto', () => {
   done();
   });
 });
+lab.experiment('Quando o desconto é maior que o valor', () => {
+  lab.test('O valor nao existe', (done) => {
+  expect(calculaTotalItem(1,5,11)).to.equal({produto:'Banana', valor: 'Não existe' });
+  done();
+  });
+});
