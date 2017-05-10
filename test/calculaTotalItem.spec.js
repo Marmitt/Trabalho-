@@ -17,3 +17,9 @@ lab.experiment('Soma de 5 Bananas', () => {
   done();
   });
 });
+lab.experiment('Soma de 5 Bananas com desconto', () => {
+  lab.test('O valor será R$4', (done) => {
+  expect(calculaTotalItem(1,5,4)).to.equal({produto:'Banana', valor: 4 });
+  done();
+  });
+});
