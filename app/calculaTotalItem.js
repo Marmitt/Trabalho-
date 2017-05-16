@@ -13,10 +13,8 @@ var produtoEncontrado;
     }
   }
 if (desconto > (produtoEncontrado.valorUnitario * quantidade)){
-  alert ("O desconto é maior que o valor");
+  return {mensagem: "O valor do desconto é maior que o valor do produto"};
 }
-else {
   return {produto: produtoEncontrado.nome, valor: produtoEncontrado.valorUnitario * quantidade - desconto };
 }
-  }
 module.exports = { calculaTotalItem };
